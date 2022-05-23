@@ -1,3 +1,6 @@
+body footer{
+    background-color: #CBFABE;
+}
 
 .contHeader {
     display: flex;
@@ -42,12 +45,21 @@ nav {
 
 .contMain {
     display: flex;
-    flex-wrap: wrap;
-
+    flex-direction: column;
+    width: 100%;
+    background-color: darkmagenta;
 }
-.calendario{
+
+.mainCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    background-color: burlywood;
+}
+.cards{
     width: 25%;
-    background-color: aquamarine;
+    background-color: rgb(60, 156, 124);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,6 +70,15 @@ nav {
     width: 100%;
 }
 
+.mapa {
+    background-color: darkslategrey;
+}
+
+.solicitudes {
+    width: 25%;
+    background-color: darkslateblue;
+    height: 250px;
+}
  /*Diseño del Footer */
 
  footer {
@@ -69,12 +90,12 @@ nav {
 
 /* Diseño del contenedor padre del Footer*/
 .contenedorFooter {
-    background-color: #CBFABE;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-evenly;
+    justify-content:space-around;
     color: #198754;
+    padding: 4%;
 }
 
 /* Diseño del contenedor del logo del Footer*/
@@ -94,7 +115,7 @@ nav {
  }
 
  /* Diseño del contenedor del contacto del Footer*/
- .contFooterB {
+ .contFooterB .contFooterC {
      display: flex;
      flex-direction: column;
      width: 100%;
@@ -103,30 +124,14 @@ nav {
      width: 40%;
  }
 
- /* Diseño de las fotos de las tarjetas del Footer*/
-.tarjetas {
-    border-radius: 5px;
-    height: 25px;
-    width: 40px;
-}
-
 
 /* -----------------Cambios en el diseño a partir de 576px EN FOOTER, ----------------*/
 /*------------------------------------------------------------------------------------*/
 
- /* Cambios en el diseño a partir de 576px*/
- @media (min-width: 576px) {
-    /* Diseño del contenedor padre del Footer*/
-    .contenedorFooter {
-        padding: 0px;
-    }
-    }
+ /* Cambios en el diseño a partir de 768px*/
     
     @media (min-width: 768px) {
     
-     .contenedorFooter {
-         justify-content: center;
-     }
      .contFooterA {
         margin-bottom: 30px;
         padding-left: 0%;
