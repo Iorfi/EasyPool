@@ -135,6 +135,29 @@ height: 50px;
     box-shadow: 10px 10px 20px 10px;
 }
 
+.news {
+    width: 82%;
+    margin: 2% 9%  1% 9%;
+    box-shadow: 10px 10px 20px 10px;
+    margin-bottom: 50px;
+}
+
+.contImgNews{
+    width: 75%;
+
+}
+
+.formulario{
+    width: 100%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.apiDiaFeriado {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 .tituloFotos {
     font-size: 40px;
 }
@@ -217,6 +240,11 @@ p{
      text-align: center;
      width: 40%;
  }
+
+ .btnFooter { 
+     margin-top: 5px;
+     width: 100%;
+ }
  .whats-app {
     position: fixed;
     width: 60px;
@@ -297,7 +325,7 @@ p{
     a.categFooter {
         width: 90%;
     }
-    .card{
+    .cards{
     width: 25%;
     }
     }
