@@ -1,3 +1,4 @@
+// Detalles en las vistas
 
 document.querySelector(".burgerButon").addEventListener("click", () => {
 
@@ -15,11 +16,7 @@ ScrollReveal().reveal('.mainCards', {delay:500});
 ScrollReveal().reveal('.news', {delay:500});
 
 
-
-//fetch('https://restcountries.com/v3.1/all')
-//.then(response => response.json())
-//.then(data => console.log(data));
-
+// Hora exacta
 
 let currentDate = new Date();
 let minute = currentDate.getMinutes();
@@ -31,7 +28,10 @@ let year = currentDate.getFullYear();
 let dateString = date + "-" +(month + 1) + "-" + year;
 let time = hours + ":" + minute ;
 
-addEventListener
 
+// Api de feriados
 
-
+    fetch('http://nolaborables.com.ar/api/v2/feriados/2022')
+    .then(response => response.json())
+    .then(json => console.log(json))	
+    .catch(err => console.error(err));

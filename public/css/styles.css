@@ -125,7 +125,7 @@ height: 50px;
     
 }
 .cards{
-    width: 250px;
+    width: 90%;
     margin-top: 15px;
     background-color: rgb(60, 156, 124);
     display: flex;
@@ -145,6 +145,14 @@ height: 50px;
 .contImgNews{
     width: 75%;
 
+}
+
+.card-body {
+    text-align: center;
+}
+
+.apiDiaFeriado {
+    font-size: 40px;
 }
 
 .formulario{
