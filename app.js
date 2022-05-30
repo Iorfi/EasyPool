@@ -22,10 +22,10 @@ let currentDate = new Date();
 let minute = currentDate.getMinutes();
 let hours = currentDate.getHours();
 let date = currentDate.getDate();
-let month = currentDate.getMonth(); // +1
+let month = (currentDate.getMonth() +1); // +1
 let year = currentDate.getFullYear();
 
-let dateString = date + "-" +(month + 1) + "-" + year;
+let dateString = date + "-" + month + "-" + year;
 let time = hours + ":" + minute ;
 
 
