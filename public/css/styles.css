@@ -30,7 +30,7 @@ main{
 }
 
 .burgerButon {
-    background-color: #325c37;
+    background-color: #CAFABE;
     justify-content: right;
     display: flex;
 }
@@ -43,7 +43,7 @@ main{
     background: #CAFABE;
     height: 100%;
     padding: 30px;
-    opacity: .9;
+    opacity: .7;
     transform: translateX(-400px);
     transition: transform .5s ease-in-out;
     z-index: 100;
@@ -96,7 +96,7 @@ height: 50px;
 }
 
 .btn-outline-success{
-    --bs-btn-border-color: #325c37;
+    color: #325c37;
 }
 .contfotosMain{
     margin-left: 5%;
@@ -135,6 +135,13 @@ height: 50px;
     box-shadow: 10px 10px 20px 10px;
 }
 
+.cardQuienes{
+    background-color: white;
+    margin: 2% 5% 2% 5%;
+    border-radius: 20px;
+    width: 450px;
+}
+
 .news {
     width: 82%;
     margin: 2% 9%  1% 9%;
@@ -151,14 +158,46 @@ height: 50px;
     text-align: center;
 }
 
-.apiDiaFeriado {
-    font-size: 40px;
+.card-bodyQuienes {
+    text-align: center;
+    background-color: white;
+    width: 78%;
+    margin: 5% 11% 5% 11%;
+    border-radius: 20px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.quienesSomosMain {
+    padding-top: 1%;
+}
+
+.listaFeriados {
+    font-size: calc(1.325rem + .5vw);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#diaFeriado0, #diaFeriado1, #diaFeriado2 {
+font-weight: bolder;
 }
 
 .formulario{
     width: 100%;
-    padding-left: 25%;
-    padding-right: 25%;
+    padding: 2% 25% 5% 25%;
+    
+}
+
+.labels {
+    font-weight: bolder;
+    font-size: calc(1rem + .2vw);
+}
+.btnForm{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
 }
 .apiDiaFeriado {
     text-align: center;
@@ -182,6 +221,11 @@ height: 50px;
     color: rgb(34, 34, 34);
 }
 
+.contQuienesSomos {
+    display: flex;
+    justify-content: center;
+}
+
  p{
     text-align: center;
 }
@@ -194,7 +238,7 @@ height: 50px;
 .solicitudes {
     width: 25%;
     background-color: darkslateblue;
-    height: 250px;
+    height: 250px !important;
 }
 
 .solicitud {
@@ -207,6 +251,10 @@ height: 50px;
 }
 p{
     margin-bottom: 0px;
+}
+
+.formContacto {
+    padding: 10%;
 }
 
  /*Diseño del Footer */
@@ -306,7 +354,6 @@ p{
         .navCeluCompu {
             display: flex;
             justify-content: space-around;
-            position:initial;
             height: auto;
             padding: 0;
             opacity: 100%;
@@ -314,7 +361,11 @@ p{
             width: 100%;
             transition: none;
             width: 100%;
-            padding-left: 10px;
+            position: sticky;
+        }
+
+        .navCeluCompu.show {
+            transform: none;
         }
         .burgerButon{
             display: none;
@@ -343,4 +394,10 @@ p{
         .contFooterA img{
            width: 200px;
        }
+
+       .card-bodyQuienes {
+
+        width: 50%;
+        margin: 5% 25% 5% 25%;
+    }
     }
